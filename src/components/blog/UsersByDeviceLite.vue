@@ -40,14 +40,13 @@ import Chart from '../../utils/chart';
 const defaultChartData = {
   datasets: [{
     hoverBorderColor: '#ffffff',
-    data: [68.3, 24.2, 7.5],
+    data: [30, 70],
     backgroundColor: [
-      'rgba(0,123,255,0.9)',
-      'rgba(0,123,255,0.5)',
-      'rgba(0,123,255,0.3)',
+      'red',
+      'green',
     ],
   }],
-  labels: ['Desktop', 'Tablet', 'Mobile'],
+  labels: ['Homme', 'Femme'],
 };
 
 export default {
@@ -85,7 +84,7 @@ export default {
        */
     title: {
       type: String,
-      default: 'Users by device',
+      default: 'Statistique par Sexe',
     },
   },
   mounted() {
