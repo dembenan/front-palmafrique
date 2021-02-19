@@ -54,11 +54,6 @@ export default new Router({
       component: PersonalBlog,
     },
     
-    {
-      path: '/add-new-post',
-      name: 'add-new-post',
-      component: AddNewPost,
-    },
     
     {
       path: '/components-overview',

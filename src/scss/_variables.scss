@@ -21,7 +21,8 @@ $new-grays: map-merge((
 // Accent color
 // Override this color and recompile the package to quickly change
 // the general accent color theme.
-$accent-color: theme-color('primary') !default;
+$accent-color:#3ba25f;
+$accent-background-color:    red;
 
 
 // Text color adjustments
@@ -77,7 +78,7 @@ $navbar-search-padding-y: 23px !default;
 
 // Nav
 $nav-link-color: $reagent-gray !default;
-$nav-link-icon-color: $nav-link-color !default;
+$nav-link-icon-color: red !default;
 $nav-link-icon-font-size: 1.25rem !default;
 $nav-link-material-icons-font-size: 1.5625rem !default;
 $nav-link-font-size: 0.8125rem !default;
@@ -191,8 +192,8 @@ $main-sidebar-toggle-border-left: 1px solid $border-color !default;
 $main-sidebar-nav-wrapper-height: calc(100vh - 3.75rem - 1px) !default;
 $main-sidebar-nav-border-bottom: 1px solid $border-color !default;
 
-$main-sidebar-nav-link-active-background-color: #FBFBFB !default;
-$main-sidebar-nav-link-active-color: $accent-color !default;
+$main-sidebar-nav-link-active-background-color: $accent-background-color;
+$main-sidebar-nav-link-active-color: #fff;
 $main-sidebar-nav-link-active-box-shadow: inset 0.1875rem 0 0 $accent-color !default;
 $main-sidebar-nav-link-active-icon-color: $accent-color !default;
 

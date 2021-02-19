@@ -2,10 +2,9 @@
   <aside :class="['main-sidebar', 'col-12', 'col-md-3', 'col-lg-2', 'px-0', sidebarVisible ? 'open' : '']">
       <div class="main-navbar">
         <nav class="navbar align-items-stretch navbar-light bg-white flex-md-nowrap border-bottom p-0">
-          <a class="navbar-brand w-100 mr-0" href="#" style="line-height: 25px;">
+          <a class="navbar-brand mr-0" href="#" style="line-height: 25px;">
             <div class="d-table m-auto">
-              <img id="main-logo" class="d-inline-block align-top mr-1" style="max-width: 25px;" src="@/assets/images/shards-dashboards-logo.svg" alt="Shards Dashboard">
-              <span v-if="!hideLogoText" class="d-none d-md-inline ml-1">Shards Dashboard</span>
+              <img id="main-logo" class="d-inline-block align-top mr-1" style="max-width: 150px; border-raduis:0px 30px 0px 30px;" src="http://www.palmafrique.com/wp-content/themes/palmafrique/images/logo_palmafrique.jpg" alt="Shards Dashboard">
             </div>
           </a>
           <a class="toggle-sidebar d-sm-inline d-md-none d-lg-none" @click="handleToggleSidebar()">
@@ -21,7 +20,7 @@
               <i class="fas fa-search"></i>
             </div>
           </div>
-          <input class="navbar-search form-control" type="text" placeholder="Search for something..." aria-label="Search">
+          <input class="navbar-search form-control" type="text" placeholder="Rechercher..." aria-label="Search">
         </div>
       </form>
 
@@ -45,7 +44,9 @@
 </template>
 
 <script>
+
 export default {
+  
   name: 'main-sidebar',
   props: {
     /**
@@ -83,12 +84,34 @@ export default {
 </script>
 
 <style lang="scss">
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700,800');
+
   .main-sidebar {
     .item-icon-wrapper {
       display: inline-block;
+      
     }
     .dropdown-menu {
       display: block;
     }
+    a{
+      text-transform: uppercase;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: bold;
+      color: #fff !important; 
+
+    }
+    li {
+      /*%*/
+      border-radius:0px 0px 20px 0px;
+    }
+   /* a:hover{
+      background: #fff !important;
+      color: #3ba25f !important;
+    }*/
+    background: #3ba25f;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 30px 0px 20px 0px;
   }
 </style>

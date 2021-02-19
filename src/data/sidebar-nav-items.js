@@ -48,13 +48,6 @@ export default function () {
     },
   },
 
-  {
-    title: 'Add New Post',
-    htmlBefore: '<i class="material-icons">note_add</i>',
-    to: {
-      name: 'add-new-post',
-    },
-  },
   
   {
     title: 'Forms & Components',
@@ -62,11 +55,7 @@ export default function () {
     to: {
       name: 'components-overview',
     },
-  },
+  }
   
-  
-  
-  
-
 ];
 }

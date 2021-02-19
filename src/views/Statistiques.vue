@@ -101,6 +101,92 @@
         </div>
       </div>
     </div>
+
+    <!-- Default Dark Table -->
+    <div class="row">
+      <div class="col">
+        <div class="card card-small overflow-hidden mb-4">
+           <div class=" border-bottom bg-success">
+            <div class="col-sm-6">
+              <a href="#addSite" class="btn btn-light m-2 "  data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Ajouter</span></a>
+              <a href="#deleteDirecteur" class="btn btn-danger m-1 " data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>Suprimer tous</span></a>							
+            </div>
+
+            <button style="float:right;" class="btn btn-secondary" onclick="printDiv('printableArea')"><i class="fa fa-print" aria-hidden="true" style="font-size: 17px; "> Imprimer</i></button>
+          </div>
+
+    <!-- Edit Modal HTML -->
+          <div id="addDirecteur" class="modal fade">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <form>
+                  <div class="modal-header">						
+                    <h4 class="modal-title">Ajouter une Derection</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  </div>
+                  <div class="modal-body">					
+                    <div class="form-group">
+                      <label>Name</label>
+                      <input type="text" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                      <label>Email</label>
+                      <input type="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                      <label>Address</label>
+                      <textarea class="form-control" required></textarea>
+                    </div>
+                    <div class="form-group">
+                      <label>Phone</label>
+                      <input type="text" class="form-control" required>
+                    </div>					
+                  </div>
+                  
+                  <div class="modal-footer">
+                    <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                    <input type="submit" class="btn btn-success" value="Add">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-body p-0 pb-3  text-center">
+            <h6 class="m-0 m-2">Liste element</h6>
+
+            <table class="table table-striped  mb-0">
+              <thead class="bg-light">
+                <tr>
+                  <th scope="col" class="border-0">#</th>
+                  <th scope="col" class="border-0">First Name</th>
+                  <th scope="col" class="border-0">Last Name</th>
+                  <th scope="col" class="border-0">Country</th>
+                  <th scope="col" class="border-0">City</th>
+                  <th scope="col" class="border-0">Phone</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Ali</td>
+                  <td>Kerry</td>
+                  <td>Russian Federation</td>
+                  <td>Gdańsk</td>
+                  <td>107-0339</td>
+                  <td>
+                      <a href="#viewModal" class="m-1"  data-toggle="modal"><i class="fas fa-eye" ></i></a>							
+                      <a href="#editModal" class="m-1"   data-toggle="modal"><i class="fas fa-edit"></i></a>
+                      <a href="#editModal" class="m-1"  data-toggle="modal"><i class="fas fa-trash-alt"></i></a>
+                  </td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Page content -->
   </div>
 

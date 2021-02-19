@@ -124,7 +124,7 @@
             <button style="float:right;" class="btn btn-secondary" onclick="printDiv('printableArea')"><i class="fa fa-print" aria-hidden="true" style="font-size: 17px; "> Imprimer</i></button>
             <div class="container">
                 <div class="large-12 medium-12 small-12 cell">
-                    <label>File
+                    <label> Ecxel File
                     <input type="file" id="file" ref="file" v-on:change="handleFileUpload()"/>
                     </label>
                     <button v-on:click="submitFile()">Submit</button>
